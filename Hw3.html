@@ -6,11 +6,15 @@
 <title>Print Line</title>
 <script type = "text/javascript">
 var celsius;
-var fahrenheit;
+//var fahrenheit;
 celsius = window.prompt("輸入攝氏的溫度");
-fahrenheit = 9/5 * celsius + 32;
-document.writeln("<h1>攝氏:"+ celsius + "°C   轉 華氏:" + fahrenheit + "°F</h1>");
+//fahrenheit = 9/5 * celsius + 32;
+document.writeln("<h1>攝氏:"+ celsius + "°C   轉 華氏:" + CelToFah( celsius ) + "°F</h1>");
 
+function CelToFah( celsius )
+		{
+			return 9/5 * celsius + 32;
+		}
 
 </script>
 </head><body></body>
